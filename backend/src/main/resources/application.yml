@@ -1,0 +1,27 @@
+server:
+  port: 8008
+
+spring:
+  application:
+    name: loan-approval
+  datasource:
+    url: jdbc:h2:mem:loandb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+logging:
+  level:
+    com.example.loan: DEBUG
+    org.springframework: INFO

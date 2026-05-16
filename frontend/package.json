@@ -1,0 +1,20 @@
+{
+  "name": "loan-frontend",
+  "version": "1.0.0",
+  "description": "借款额度审批系统前端",
+  "scripts": {
+    "dev": "vue-cli-service serve --port 3008",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.3",
+    "axios": "^1.6.0",
+    "element-ui": "^2.15.14"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
